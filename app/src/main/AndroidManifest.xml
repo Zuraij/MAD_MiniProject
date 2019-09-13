@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mad_miniproject">
+    package="com.example.user.mad_new">
 
     <application
         android:allowBackup="true"
@@ -9,14 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddNotice"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".Staff_Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Modify_Staff_Activity"
+            android:parentActivityName=".View_List_Activity"/>
+        <activity android:name=".ADD_staff_activity"
+            android:parentActivityName=".View_List_Activity"/>
+        <activity android:name=".View_List_Activity"
+            android:parentActivityName=".Adminpanel_Activity"/>
+        <activity android:name=".Adminpanel_Activity"></activity>
     </application>
 
 </manifest>
