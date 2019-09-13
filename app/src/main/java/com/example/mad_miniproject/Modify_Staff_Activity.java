@@ -4,14 +4,27 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Patterns;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.util.regex.Pattern;
+
 public class Modify_Staff_Activity extends AppCompatActivity implements View.OnClickListener {
     private EditText usernameEditText,emailEditText,firstnameEditText,lastnameEditText,positionEditText,
             addressEditText,phoneEditText,genderEditText,salaryEditText,passwordEditText ;
+    private static final Pattern PASSWORD_PATTERN =
+            Pattern.compile("^" +
+                    //"(?=.*[0-9])" +         //at least 1 digit
+                    //"(?=.*[a-z])" +         //at least 1 lower case letter
+                    //"(?=.*[A-Z])" +         //at least 1 upper case letter
+                    "(?=.*[a-zA-Z])" +      //any letter
+                    "(?=.*[@#$%^&+=])" +    //at least 1 special character
+                    "(?=\\S+$)" +           //no white spaces
+                    ".{4,}" +               //at least 4 characters
+                    "$");
 
 
     private long _id;
@@ -139,10 +152,13 @@ public class Modify_Staff_Activity extends AppCompatActivity implements View.OnC
                     passwordEditText.requestFocus();
                     return;
                 }
+                if (!validateEmail()| !validatePassword()) {
+                    dbManager.update(_id, username, email, firstname, lastname, poss, address, gender, Integer.parseInt(phone), Double.parseDouble(salary), password);
+                    return ;
+                }
+                    this.returnHome();
+                    break;
 
-                dbManager.update(_id, username,email,firstname,lastname,poss,address,gender,Integer.parseInt(phone),Double.parseDouble(salary),password);
-                this.returnHome();
-                break;
 
             case R.id.btn_delete:
                 dbManager.delete(_id);
@@ -155,5 +171,33 @@ public class Modify_Staff_Activity extends AppCompatActivity implements View.OnC
         Intent home_intent = new Intent(getApplicationContext(), View_List_Activity.class)
                 .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(home_intent);
+    }
+    private boolean validateEmail() {
+        String emailInput = emailEditText.getText().toString().trim();
+
+        if (emailInput.isEmpty()) {
+            emailEditText.setError("Field can't be empty");
+            return false;
+        } else if (!Patterns.EMAIL_ADDRESS.matcher(emailInput).matches()) {
+            emailEditText.setError("Please enter a valid email address");
+            return false;
+        } else {
+            emailEditText.setError(null);
+            return true;
+        }
+    }
+    private boolean validatePassword() {
+        String passwordInput = passwordEditText.getText().toString().trim();
+
+        if (passwordInput.isEmpty()) {
+            passwordEditText.setError("Field can't be empty");
+            return false;
+        } else if (!PASSWORD_PATTERN.matcher(passwordInput).matches()) {
+            passwordEditText.setError("Password too weak");
+            return false;
+        } else {
+            passwordEditText.setError(null);
+            return true;
+        }
     }
 }

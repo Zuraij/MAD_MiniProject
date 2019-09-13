@@ -30,19 +30,11 @@ public class Staff_Login extends AppCompatActivity {
             public void onClick(View v) {
                 String username = editname.getText().toString();
                 String pass = editpass.getText().toString();
-                boolean checkadmin = checkadmin(username, pass);
+
+                     boolean checklogin = dbHelper.loginfun(username, pass);
 
 
 
-
-
-
-                if (checkadmin = true) {
-                    startActivity(new Intent(Staff_Login.this, Adminpanel_Activity.class));
-
-                } else {
-
-                    boolean checklogin = dbHelper.loginfun(username, pass);
 
                     if (username.isEmpty()) {
                         editname.setError("Username can't be Empty");
@@ -59,20 +51,18 @@ public class Staff_Login extends AppCompatActivity {
                     if (checklogin == true) {
 
                         Toast.makeText(getApplicationContext(), "Successfully login", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(Staff_Login.this, MainActivity.class));
-                    } else
+                        startActivity(new Intent(Staff_Login.this, Adminpanel_Activity.class));
+                    }
+
+                    else
                         Toast.makeText(getApplicationContext(), "Invalid Please insert correctly", Toast.LENGTH_SHORT).show();
 
 
                 }
-            }
+
+
 
         });
     }
-    public boolean checkadmin(String user, String pass){
-        user="admin";
-        pass="admin";
-                return true;
 
-    }
 }
