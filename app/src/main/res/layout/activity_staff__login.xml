@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Staff_Login">
+
+    <EditText
+        android:id="@+id/usernameL"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="152dp"
+        android:ems="10"
+        android:hint="UserName"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="5dp"
+        android:drawablePadding="10dp"
+
+        android:background="@drawable/loginputborder"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordL"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/loginputborder"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:paddingStart="5dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameL" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="108dp"
+        android:text="Login"
+        android:background="@drawable/loginbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordL"
+        app:layout_constraintVertical_bias="0.373" />
+</android.support.constraint.ConstraintLayout>
