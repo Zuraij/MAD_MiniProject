@@ -46,7 +46,7 @@ public class UpdateNotice extends AppCompatActivity {
             long rowID = dbHelper.updateNotice(notice_id, topic, description);
 
             if (rowID == -1) {
-                Toast.makeText(this, "Notice Could not be Posted. Refer Manual.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Notice Could not be Posted.", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(this, "Notice Posted Successfully.", Toast.LENGTH_SHORT).show();
                 finish();
