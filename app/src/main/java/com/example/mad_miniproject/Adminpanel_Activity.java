@@ -1,4 +1,4 @@
-package com.example.user.mad_new;
+package com.example.mad_miniproject;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.user.mad_new.R;
+
 public class Adminpanel_Activity extends AppCompatActivity {
 
     @Override
@@ -18,7 +20,7 @@ public class Adminpanel_Activity extends AppCompatActivity {
     }
 
     public void addstaff(View view) {
-        startActivity(new Intent(this,View_List_Activity.class));
+        startActivity(new Intent(this, com.example.user.mad_new.View_List_Activity.class));
     }
 
 

@@ -1,8 +1,10 @@
 package com.example.mad_miniproject;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.example.user.mad_new.R;
 
 public class AddNotice extends AppCompatActivity {
 
