@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/backlogin"
+
+    tools:context=".MainActivityStd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/student_management"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="11dp"
+        android:textStyle="bold"
+        android:textSize="19dp"
+
+        />text
+
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/firstname11"
+        />text
+
+        <EditText
+        android:id="@+id/ssFirstName"
+        android:layout_width="match_parent"
+            android:inputType="text"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lastname89"
+        />text
+
+        <EditText
+        android:id="@+id/ssLastName"
+        android:layout_width="match_parent"
+            android:inputType="text"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emailid"
+        />text
+
+        <EditText
+        android:id="@+id/ssEmailID"
+        android:layout_width="match_parent"
+            android:inputType="text"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age"
+        />text
+
+        <EditText
+        android:id="@+id/ssAge"
+        android:layout_width="match_parent"
+            android:inputType="text"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address8"
+        />text
+
+        <EditText
+        android:id="@+id/ssAddress"
+        android:layout_width="match_parent"
+            android:inputType="text"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contactnumber"
+        />text
+
+        <EditText
+        android:id="@+id/ssContactNumber"
+            android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        />text
+
+
+        <EditText
+        android:id="@+id/ssUsername"
+            android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        />text
+
+
+        <EditText
+        android:id="@+id/ssPassword"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/id7"
+            />text
+
+
+        <EditText
+            android:id="@+id/ssID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginBottom="10dp"
+            />
+
+
+        <Button
+        android:id="@+id/InsertStudent"
+            android:background="@drawable/loginbtn"
+        android:text="@string/insertstudent"
+            android:textColor="@color/colorwhite"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/ViewStudents"
+            android:text="@string/viewstudents"
+            android:textColor="@color/colorwhite"
+            android:background="@drawable/addbtn"
+            android:layout_width="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/UpdateStudents"
+            android:textColor="@color/colorwhite"
+            android:layout_marginTop="6dp"
+            android:text="@string/updatestudents"
+            android:background="@drawable/updatebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/DeleteStudents"
+            android:text="@string/deletestudents"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/colorwhite"
+            android:background="@drawable/deletbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+

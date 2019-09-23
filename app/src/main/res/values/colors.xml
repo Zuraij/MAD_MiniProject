@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0cd7da</color>
+    <color name="colorPrimaryDark">#0cd7da</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorLogin">#1BC2D8</color>
+    <color name="colorwhite">#FFFFFF</color>
+    <color name="colorloginbtn">#007bff</color>
+    <color name="black">#000</color>
+    <color name="colorred">#ff5e73</color>
+    <color name="coloradminpage">#33b1ff</color>
+    <color name="registershape">#dfdede</color>
+    <color name="registerbtn">#e1ce50</color>
+    <color name="white1">#fff</color>
+</resources>
