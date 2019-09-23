@@ -1,6 +1,58 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">MAD_MiniProject</string>
     <string name="title_activity_add_notice">AddNotice</string>
 
     <string name="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis scelerisque diam, nec accumsan eros ultrices nec. Sed pulvinar, nulla ac vestibulum tristique.</string>
 </resources>
+=======
+    <string name="app_name">Institue Management</string>
+
+
+    <string name="enter_name">Fruit Name</string>
+    <string name="add_record">Add Record</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
+    <string name="empty_list_text">No records found</string>
+    <string name="enter_desc">Color</string>
+    <string name="enter_title"></string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">email</string>
+    <string name="firstname">firstname</string>
+    <string name="lastname">lastname</string>
+    <string name="postion">postion</string>
+    <string name="address">address</string>
+    <string name="gender">gender</string>
+    <string name="salary">Salary</string>
+    <string name="phone">phone</string>
+    <string name="id">ID :</string>
+    <string name="username11">UserName :</string>
+    <string name="email11">Email :</string>
+    <string name="firstname1">FirstName :</string>
+    <string name="lastname1">LastName :</string>
+    <string name="position1">Position :</string>
+    <string name="address1">Address :</string>
+    <string name="gender1">Gender :</string>
+    <string name="phone_no">Phone No :</string>
+    <string name="salary1">Salary</string>
+    <string name="password22">Password :</string>
+    <string name="add_staff">add_staff</string>
+    <string name="view_staff">view_staff</string>
+    <string name="Null">Null</string>
+    <string name="Notice_banner">Notice Board</string>
+    <string name="New_notice_banner">New Notice</string>
+    <string name="Subject">Subject</string>
+    <string name="Topic">Topic</string>
+    <string name="Notice">Notice</string>
+    <string name="Description">Description</string>
+    <string name="Add_notice">Send Notice</string>
+    <string name="Update_notice_banner">Update Notice</string>
+    <string name="Update_notice">Update Notice</string>
+    <string name="delete_msg">Are you sure ?</string>
+    <string name="delete">Yes, Delete</string>
+    <string name="Cancel">No, Cancel</string>
+</resources>
+
+
+>>>>>>> Yolo
