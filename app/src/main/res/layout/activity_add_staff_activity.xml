@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -140,4 +141,149 @@
 </LinearLayout>
     </LinearLayout>
 </ScrollView>
+
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/colorAccent"-->
+            <!--android:id="@+id/tootlbar">-->
+
+        <!--</android.support.v7.widget.Toolbar>-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:text="Add Staff Details"
+            android:textSize="30dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/coloradminpage"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    <EditText
+        android:id="@+id/username_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/username" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/email_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textLongMessage"
+        android:minLines="5" >
+    </EditText>
+    <EditText
+        android:id="@+id/firstname_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/firstname"
+        android:inputType="textLongMessage"
+        android:minLines="5" >
+    </EditText>
+    <EditText
+        android:id="@+id/lastname_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/lastname"
+        android:inputType="textLongMessage"
+        android:minLines="5" >
+    </EditText>
+    <EditText
+        android:id="@+id/position_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/postion"
+        android:inputType="textLongMessage"
+        android:minLines="5" >
+    </EditText>
+    <EditText
+        android:id="@+id/address_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/address"
+        android:inputType="textLongMessage"
+        android:minLines="5" >
+    </EditText>
+    <EditText
+        android:id="@+id/gender_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/gender"
+        android:inputType="textLongMessage"
+        android:minLines="5" >
+    </EditText>
+    <EditText
+        android:id="@+id/phone_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="number"
+        android:minLines="5" >
+
+    </EditText>
+    <EditText
+        android:id="@+id/salary_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/salary"
+        android:inputType="number"
+
+        android:minLines="5" >
+    </EditText>
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textLongMessage"
+        android:minLines="5" >
+    </EditText>
+
+
+    <Button
+        android:id="@+id/add_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/addbtn"
+        android:layout_gravity="center"
+        android:text="@string/add_record" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+</LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
 
